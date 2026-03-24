@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Xyrus-GPT | High-Speed Network Auditor</title>
+    <style>
+        body { background: #050505; color: #00ff41; font-family: 'Courier New', Courier, monospace; }
+        .wrapper { max-width: 800px; margin: 50px auto; border: 2px solid #00ff41; padding: 30px; box-shadow: 0 0 20px #00ff41; }
+        .status-box { background: #111; border: 1px dashed #00ff41; padding: 15px; margin-top: 20px; min-height: 100px; }
+        input[type="file"] { margin: 20px 0; color: #00ff41; }
+        button { background: #00ff41; color: #000; border: none; padding: 10px 25px; font-weight: bold; cursor: pointer; }
+        button:hover { background: #008f11; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>[ SYSTEM AUDIT ACCESS: NZM4 ]</h1>
+        <p>Unggah file jabat tangan (WPA Handshake) untuk memulai de-enkripsi:</p>
+        
+        <input type="file" id="captureFile">
+        <br>
+        <button onclick="startAudit()">EKSEKUSI AUDIT</button>
+
+        <div class="status-box" id="consoleOutput">
+            > System Ready...
+        </div>
+    </div>
+
+    <script>
+        function startAudit() {
+            const out = document.getElementById('consoleOutput');
+            out.innerHTML += "<br>> Mengirim data ke mesin Python...";
+            out.innerHTML += "<br>> Memulai Dictionary Attack skala penuh...";
+            
+            // Simulasi komunikasi dengan backend
+            setTimeout(() => {
+                out.innerHTML += "<br>> [!] Handshake terdeteksi.";
+                out.innerHTML += "<br>> [!] Menguji 1.000.000 kombinasi per detik...";
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
